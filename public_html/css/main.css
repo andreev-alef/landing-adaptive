@@ -1,0 +1,163 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 07.11.2014, 16:23:27
+    Author     : alef
+*/
+
+/*@import "bootstrap-themes.css";*/
+
+@import "../lib/bs/css/bootstrap.min.css";
+@import "../lib/bs/css/bootstrap-theme.min.css";
+@import "fonts.css";
+@import "gi.css";
+
+
+@media screen{
+    body{
+        margin: 0px;
+    }
+    /*------------------------------------------------------------------------*/
+    .wrapper,
+    .wrapper-bg,
+    .wr-title,
+    .title,
+    .title-bg,
+    .content
+    {
+        position: absolute;
+    }
+    /*------------------------------------------------------------------------*/
+    .root{
+        /*background-image: url(../pic/pict4271.jpg);*/
+        background-image: url(../pic/pict3930_high_contrast.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        /*background-color: #fff;*/
+        height: 1800px;
+    }
+    /*------------------------------------------------------------------------*/
+    .wrapper{
+        /*background-image: url(./pic/pict3930.jpg);*/
+        background-size: cover;
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        height: 600px;
+        top: 10%;
+        cursor: default;
+        overflow: hidden;
+        z-index: 5000;
+    }
+    .content{
+        height: 100%;
+        width: 100%;
+        right: 0px;
+        padding-left: 30%;
+        background-color: rgba(255,255,255,0.38);
+        color: #FFF;
+        font-family: 'Noto Serif','Open Sans';
+        font-size: 35px;
+        text-align: center;
+        z-index: 7000;
+    }
+    .content > div{
+        position: absolute;
+    }
+    .content > div:nth-child(1){
+        height: 300px;
+        width: 300px;
+        border-radius: 150px;
+        top: 100px;
+        background-color: rgb(237, 28, 36);
+        padding-top: 90px;
+    }
+    .content > div:nth-child(2){
+        top: 100px;
+        left: 700px;
+        height: 300px;
+        width: 500px;
+        background-color: rgb(248, 190, 0);
+        padding-top: 90px;
+        font-size: 25px;
+    }
+    .wr-title{
+        height: 160px;
+        left: 0px;
+        width: 38%;
+        font-family: 'Open Sans Light';
+        font-size: 35px;
+        color: #fff;
+        letter-spacing: 7px;
+        text-align: center;
+        background-color: transparent;
+        z-index: 10000;
+    }
+    .title{
+        top: 38%;
+        left: 10%;
+        z-index: 10000;
+    }
+    .title-bg{
+        height: 100%;
+        width: 100%;
+        left: -175px;
+        bottom: 0px;
+        /*background-color: rgb(0, 166, 108);*/
+        background-color: rgba(18, 131, 79, 0.62);
+        /*transform: skew(-38deg, 0deg);*/
+        border-bottom-right-radius: 160px;;
+        z-index: 7000;
+    }
+    .wrapper-bg{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 1000;
+    }
+    .page-header{
+        position: absolute;
+        left: 0px;
+        width: 100%;
+        height: 200px;
+        top:170px;
+        border: none;
+        margin: 0px;
+        background-color: rgba(100%,100%,100%,0.62);
+        text-align: center;
+        text-transform: uppercase;
+        text-transform: uppercase;
+        font-family: 'Exo2 light','Open Sans';
+        color: rgb(89, 101, 177);
+    }
+    
+    .page-header > h1{
+        font-size: 45px;
+        /*font-weight: bold;*/
+        letter-spacing: 2px;
+    }
+    .page-header > h2{
+        font-size: 35px;
+        /*font-weight: bold;*/
+        letter-spacing: 2px;
+    }
+}
+@media screen and (max-width: 1024px){
+
+}
+@media screen and (max-width: 800px){
+
+}
+@media screen and (max-width: 600px){
+
+}
+@media screen and (max-width: 480px){
+
+}
+@media screen and (max-width: 320px){
+
+}
