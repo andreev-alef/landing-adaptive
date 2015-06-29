@@ -32,13 +32,83 @@ and open the template in the editor.
     }
     /*------------------------------------------------------------------------*/
     .root{
-        /*background-image: url(../pic/pict4271.jpg);*/
         background-image: url(../pic/pict3930_high_contrast.jpg);
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
-        /*background-color: #fff;*/
+        background-color: #4E2C76;
         height: 1800px;
+    }
+    /*------------------------------------------------------------------------*/
+    .left-pane, .right-pane{
+        position: absolute;
+        height: 1800px;
+    }
+    .left-pane{
+        width: 38%;
+        left: 0;
+        border-right: #FFF solid 2px;
+    }
+    .right-pane{
+        width: 62%;
+        right: 0;
+        border-left: #FFF solid 2px;
+    }
+    /*------------------------------------------------------------------------*/
+    .page-header{
+        position: absolute;
+        left: 38%;
+        width: 62%;
+        height: 320px;
+        top: 10px;
+        border: none;
+        margin: 0px;
+        padding-top: 50px;
+        background-color: rgba(100%,100%,100%,0.62);
+        text-align: center;
+        text-transform: uppercase;
+        color: rgb(34, 46, 106);
+    }
+
+    .page-header > h1{
+        font-family: 'Exo2 light','Open Sans';
+        font-size: 70px;
+        letter-spacing: 2px;
+    }
+    .page-header > h2{
+        font-family: 'Cuprum','Exo2 light','Open Sans';
+        font-size: 46px;
+        letter-spacing: 1px;
+    }
+    /*------------------------------------------------------------------------*/
+    .alef{
+        position: absolute;
+        right: 62%;
+        top: 10px;
+        width: 320px;
+        height: 320px;
+        margin: 0px;
+        padding-top: 120px;
+        letter-spacing: 3px;
+        font-size: 30px;
+        text-align: center;
+        background-color: rgba(23, 2, 67, 1);
+        color: #FEEB46;
+        font-family: 'open sans';
+    }
+    .full_name{
+        display: inline-block;
+        font-size: 20px;
+    }
+    .contacts{
+        /*position: absolute;*/
+        display: inline-block;
+        right: 10px;
+        top: 0px;
+        height: 50px;
+    }
+    .contacts > span {
+        font-size: 20px;
     }
     /*------------------------------------------------------------------------*/
     .wrapper{
@@ -119,40 +189,25 @@ and open the template in the editor.
         width: 100%;
         z-index: 1000;
     }
+}
+@media screen and (max-width: 860px){
+    .alef{
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100px;
+        padding-top: 20px;
+        font-size: 30px;
+        text-align: center;
+        background-color: rgba(23, 2, 67, 1);
+    }
     .page-header{
-        position: absolute;
         left: 0px;
         width: 100%;
-        height: 200px;
-        top:170px;
-        border: none;
-        margin: 0px;
-        background-color: rgba(100%,100%,100%,0.62);
-        text-align: center;
-        text-transform: uppercase;
-        text-transform: uppercase;
-        font-family: 'Exo2 light','Open Sans';
-        color: rgb(89, 101, 177);
-    }
-    
-    .page-header > h1{
-        font-size: 45px;
-        /*font-weight: bold;*/
-        letter-spacing: 2px;
-    }
-    .page-header > h2{
-        font-size: 35px;
-        /*font-weight: bold;*/
-        letter-spacing: 2px;
+        top: 100px;
     }
 }
-@media screen and (max-width: 1024px){
-
-}
-@media screen and (max-width: 800px){
-
-}
-@media screen and (max-width: 600px){
+/*@media screen and (max-width: 600px){
 
 }
 @media screen and (max-width: 480px){
@@ -160,4 +215,4 @@ and open the template in the editor.
 }
 @media screen and (max-width: 320px){
 
-}
+}*/
