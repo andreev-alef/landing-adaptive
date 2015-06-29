@@ -1,11 +1,17 @@
-function hcenter() {
-
+function vcenter(thisClassName) {
+    $(thisClassName).css({
+        'top': '50%',
+        'margin-top': -$(thisClassName).height() / 2
+    });
 }
 
-function vcenter(thisClassName) {
-
+function hcenter(thisClassName) {
+    $(thisClassName).css({
+        'left': '50%',
+        'margin-left': -$(thisClassName).width() / 2
+    });
 }
 
 $(document).ready(function () {
-    
+    vcenter('.content');
 });
