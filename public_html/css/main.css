@@ -104,11 +104,11 @@ and open the template in the editor.
     .content{
         position: absolute;
         margin: 0px;
-        /*margin-top: -70px;*/
+        margin-top: -70px;
         padding: 0px;
         right: 20px;
         height: 140px;
-        /*top: 50%;*/
+        top: 50%;
         text-transform: uppercase;
     }
 }
