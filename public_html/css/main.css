@@ -30,28 +30,33 @@ and open the template in the editor.
     }
     /*------------------------------------------------------------------------*/
     .root{
-        background-image: url(../pic/pict3930_high_contrast.jpg);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        background-color: #4E2C76;
+        /*        background-image: url(../pic/pict3930_high_contrast.jpg);
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;*/
+        /*background-color: rgb(238, 240, 241);*/
+        background-color: #FFF;;
         height: 1800px;
         width: 100%;
     }
 
+
     /*------------------------------------------------------------------------*/
     .page-header{
-        left: 38%;
+        position: absolute;
+        left: -100px;
         width: 62%;
         height: 320px;
-        top: 10px;
-        border: none;
+        top: 250px;
         margin: 0px;
         padding-top: 50px;
         background-color: rgba(100%,100%,100%,0.62);
         text-align: center;
         text-transform: uppercase;
-        color: rgb(34, 46, 106);
+        /* color: rgb(34, 46, 106); */
+        color: rgb(140, 190, 75);
+        border: dotted silver 1px;
+        transform: rotate(-90deg);
     }
 
     .page-header > h1{
