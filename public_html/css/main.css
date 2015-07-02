@@ -30,11 +30,12 @@ and open the template in the editor.
     }
     /*------------------------------------------------------------------------*/
     .root{
-        background-image: url(../pic/pict3930_high_contrast.jpg);
+/*        background-image: url(../pic/pict3930_high_contrast.jpg);
         background-repeat: no-repeat;
         background-attachment: fixed;
-        background-size: cover;
-        background-color: #4E2C76;
+        background-size: cover;*/
+        background-color: #8CBE4B;
+        background-color: rgb(208, 210, 211);
         height: 1800px;
         width: 100%;
     }
@@ -95,8 +96,10 @@ and open the template in the editor.
     .content-item{
         border: none;
         border-right: solid 3px rgb(34, 46, 106);
-        width: 500px;
+        width: 660px;
         height: 400px;
+        left: 62%;
+        margin-left: -330px;
         padding-right: 10px;
         color: rgb(34, 46, 106);
         font-family: 'Cuprum';
