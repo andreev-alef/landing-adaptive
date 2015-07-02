@@ -10,9 +10,8 @@ function hcenter(thisClassName) {
         'left': '50%',
         'margin-left': -$(thisClassName).width() / 2
     });
-    alert(thisClassName+'   '+$(thisClassName).css('width'));
 }
 
 $(document).ready(function () {
-
+    vcenter('.content-item');
 });
