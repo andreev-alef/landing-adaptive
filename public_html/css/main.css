@@ -31,7 +31,7 @@ and open the template in the editor.
     /*------------------------------------------------------------------------*/
     .root{
         background-color: #FFF;
-        height: 2560px;
+        height: 3840px;
         width: 100%;
     }
 
@@ -96,6 +96,9 @@ and open the template in the editor.
         cursor: default;
         border: none;
         text-align: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
     }
     .content-item{
         position: absolute;
@@ -107,24 +110,17 @@ and open the template in the editor.
         color: rgb(22, 39, 155);
     }
 
-    .content:nth-child(2n+1){
-        background-color: rgba(200,200,200,0.5);
-        /*border-right: solid 1px rgb(34, 46, 106);*/
-        /*text-align: right;*/
-        right: 0px;
+    .content:nth-child(1){
+        background-image: url(../pic/pict3930_high_contrast.jpg);
     }
-    .content:nth-child(2n+1) > .content-item{
-        /*right: 10px;*/
+
+    .content:nth-child(3){
+        background-image: url(../pic/pict4019.jpg);
     }
-    .content:nth-child(2n){
-        background-color: rgba(255,255,255,1);
-        /*border-left: solid 1px rgb(34, 46, 106);*/
-        /*text-align: left;*/
-        left: 0px;
+    .content:nth-child(5){
+        background-image: url(../pic/pict4271.jpg);
     }
-    .content:nth-child(2n) > .content-item{
-        /*left: 0px;*/
-    }
+
     .item-title{
         text-transform: uppercase;
         font-family: 'Open Sans Light', 'Open Sans','Cuprum';
