@@ -10,8 +10,8 @@ and open the template in the editor.
 
 /*@import "bootstrap-themes.css";*/
 
-/*@import "../lib/bs/css/bootstrap.min.css";
-@import "../lib/bs/css/bootstrap-theme.min.css";*/
+@import "../lib/bs/css/bootstrap.min.css";
+@import "../lib/bs/css/bootstrap-theme.min.css";
 @import "fonts.css";
 @import "gi.css";
 
@@ -43,31 +43,35 @@ and open the template in the editor.
 
     /*------------------------------------------------------------------------*/
     .page-header{
-        position: fixed;
-        left: -100px;
-        width: 62%;
-        height: 320px;
-        top: 250px;
-        margin: 0px;
-        padding-top: 50px;
-        background-color: rgba(100%,100%,100%,0.62);
-        text-align: center;
-        text-transform: uppercase;
-        /* color: rgb(34, 46, 106); */
-        color: rgb(140, 190, 75);
-        border: dotted silver 1px;
-        transform: rotate(-90deg);
     }
 
-    .page-header > h1{
+    .header{
+        position: fixed;
+        width: 100%;
+        height: 130px;
+        background-color: rgba(100%,100%,100%,1);
+        margin: 0px;
+        padding-top: 2.7%;
+        text-align: center;
+        text-transform: uppercase;
         font-family: 'Exo2 light','Open Sans';
+        font-weight: lighter;
+        color: rgb(140, 190, 75);
+        transform: rotate(0deg);
+        z-index: 1000;
+        box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.38);
+    }
+    .title{
+        border-bottom: solid #555 1px;
         font-size: 70px;
         letter-spacing: 2px;
+        top: 0px;
     }
-    .page-header > h2{
-        font-family: 'Cuprum','Exo2 light','Open Sans';
-        font-size: 46px;
+    .name{
+        border-top: solid #555 1px;
+        font-size: 50px;
         letter-spacing: 1px;
+        bottom: 0px;
     }
     /*------------------------------------------------------------------------*/
     .alef{
@@ -91,52 +95,55 @@ and open the template in the editor.
     /*------------------------------------------------------------------------*/
     .wrapper-content{
         position: absolute;
-        width: 500px;
+        width: 50%;
         height: 200px;
         top: 100px;
-        right: 250px;
+        right: 50px;
     }
     .content{
         position: relative;
-        width: 500px;
+        width: 100%;
         height: 400px;
         cursor: default;
-        background-color: rgba(255,255,255,0.3);
+        background-color: rgba(255,255,255,1);
         border: none;
-        color: rgb(34, 46, 106);
-        font-family: 'Cuprum';
     }
     .content-item{
         position: absolute;
         margin: 0px;
-        /*margin-top: -100px;*/
         margin-left: 10px;
         padding: 0px;
-        right: 20px;
         height: auto;
-        width: 500px;
+        width: 100%;
         box-sizing: content-box;
-        background-color: #f7e1b5;
-        /*top: 50%;*/
+        color: rgb(22, 39, 155);
     }
-    .content:nth-child(1){
-        width: 500px;
+
+    .content:nth-child(2n+1){
+        border-right: solid 1px rgb(34, 46, 106);
+        text-align: right;
+        right: 0px;
+    }
+    .content:nth-child(2n+1) > .content-item{
+        right: 10px;
     }
     .content:nth-child(2n){
-        border-left: solid 3px rgb(34, 46, 106);
+        border-left: solid 1px rgb(34, 46, 106);
         text-align: left;
+        left: 0px;
     }
-    .content:nth-child(2n+1){
-        text-align: right;
-        border-right: solid 3px rgb(34, 46, 106);
+    .content:nth-child(2n) > .content-item{
+        left: 0px;
     }
     .title{
         text-transform: uppercase;
-        font-size: 30px;
+        font-family: 'Open Sans Light', 'Open Sans','Cuprum';
+        font-size: 50px;
+        font-weight: normal;
     }
     .description{
-        font-size: 15px;
-        font-family: 'PT Serif';
+        font-size: 30px;
+        font-family: 'Cuprum','PT Serif';
     }
 }
 @media screen and (max-width: 860px){
