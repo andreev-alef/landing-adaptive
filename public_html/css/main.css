@@ -41,27 +41,27 @@ and open the template in the editor.
         position: fixed;
         width: 100%;
         height: 130px;
-        background-color: rgba(100%,100%,100%,1);
+        background-color: rgba(100%,100%,100%,0.9);
         margin: 0px;
         padding-top: 2.7%;
         text-align: center;
         text-transform: uppercase;
         font-family: 'Exo2 light','Open Sans';
         font-weight: lighter;
-        color: rgb(140, 190, 75);
+        color: #507C18;
         transform: rotate(0deg);
         z-index: 1000;
         box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.38);
     }
     .title{
-        border-bottom: solid #555 1px;
+        /*border-bottom: solid #555 1px;*/
         font-size: 70px;
         letter-spacing: 2px;
         top: 0px;
     }
     .name{
-        border-top: solid #555 1px;
-        font-size: 50px;
+        /*border-top: solid #555 1px;*/
+        font-size: 70px;
         letter-spacing: 1px;
         bottom: 0px;
     }
@@ -100,14 +100,27 @@ and open the template in the editor.
         background-attachment: fixed;
         background-size: cover;
     }
+    .content{
+        position: relative;
+        width: 100%;
+        height: 540px;
+        cursor: default;
+        border: none;
+        text-align: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
     .content-item{
         position: absolute;
         margin: 0px;
         padding: 0px;
         height: auto;
         width: 100%;
+        padding: 20px;
         /*box-sizing: content-box;*/
         color: rgb(22, 39, 155);
+        background-color: rgba(255,255,255,0.5);
     }
 
     .content:nth-child(1){
