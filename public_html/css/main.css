@@ -111,6 +111,14 @@ and open the template in the editor.
         background-attachment: fixed;
         background-size: cover;
     }
+    .content-bg{
+        position: absolute;
+        margin: 0px;
+        padding: 0px;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(221, 231, 233, 0.62)
+    }
     .content-item{
         position: absolute;
         margin: 0px;
@@ -118,9 +126,8 @@ and open the template in the editor.
         height: auto;
         width: 100%;
         padding: 20px;
-        /*box-sizing: content-box;*/
         color: rgb(22, 39, 155);
-        background-color: rgba(255,255,255,0.5);
+        background-color: transparent;
     }
 
     .content:nth-child(1){
