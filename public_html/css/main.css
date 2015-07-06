@@ -10,8 +10,8 @@ and open the template in the editor.
 
 /*@import "bootstrap-themes.css";*/
 
-/*@import "../lib/bs/css/bootstrap.min.css";
-@import "../lib/bs/css/bootstrap-theme.min.css";*/
+@import "../lib/bs/css/bootstrap.min.css";
+@import "../lib/bs/css/bootstrap-theme.min.css";
 @import "fonts.css";
 @import "gi.css";
 
@@ -57,6 +57,9 @@ and open the template in the editor.
         color: rgb(140, 190, 75);
         border: dotted silver 1px;
         transform: rotate(-90deg);
+    }
+    .page-header > *{
+        font-weight: normal;
     }
 
     .page-header > h1{
@@ -109,19 +112,12 @@ and open the template in the editor.
     .content-item{
         position: absolute;
         margin: 0px;
-        /*margin-top: -100px;*/
-        margin-left: 10px;
-        padding: 0px;
-        right: 20px;
         height: auto;
         width: 500px;
         box-sizing: content-box;
         background-color: #f7e1b5;
-        /*top: 50%;*/
     }
-    .content:nth-child(1){
-        width: 500px;
-    }
+    
     .content:nth-child(2n){
         border-left: solid 3px rgb(34, 46, 106);
         text-align: left;
