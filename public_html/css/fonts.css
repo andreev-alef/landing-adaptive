@@ -9,7 +9,7 @@ and open the template in the editor.
 */
 
 @font-face{
-    font-family: Cuprum;
+    font-family: 'Cuprum';
     src:    url('../fonts/cuprum-regular.ttf'),
         url('../fonts/cuprum-regular.eot');
 }
@@ -42,7 +42,7 @@ and open the template in the editor.
 }
 
 @font-face{
-    font-family: Exo2;
+    font-family: 'Exo2';
     src:    url('../fonts/exo2-regular.ttf'),
         url('../fonts/exo2-regular.eot');
 }
@@ -50,4 +50,14 @@ and open the template in the editor.
     font-family: 'Exo2 Light';
     src:    url('../fonts/exo2-light.ttf'),
         url('../fonts/exo2-light.eot');
+}
+@font-face{
+    font-family: 'Playfair Display';
+    src:    url('../fonts/playfairdisplay-regular.ttf'),
+        url('../fonts/playfairdisplay-regular.eot');
+}
+@font-face{
+    font-family: 'Playfair Display Italic';
+    src:    url('../fonts/playfairdisplay-italic.ttf'),
+        url('../fonts/playfairdisplay-italic.eot');
 }
