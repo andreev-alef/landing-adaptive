@@ -100,8 +100,6 @@ and open the template in the editor.
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
-        /*        transform-origin: right top 0px;
-                transform: skewY(-5deg);*/
         background-color: rgba(255, 255, 255, 1);
     }
     .content-bg{
@@ -111,26 +109,20 @@ and open the template in the editor.
         height: 100%;
         width: 100%;
         top: 0px;
-        background-color: rgba(255, 255, 255, 0.62);
     }
-    .content:nth-child(2n+1) > .content-bg{
-/*        background-image: linear-gradient(90deg,
-            rgba(255, 255, 255, 0.38) 0%,
-            rgba(255, 255, 255, 1.0) 38%,
-            rgba(255, 255, 255, 0.38) 100%);*/
-    }
-    .content:nth-child(2n) > .content-bg{
-        background-color: rgba(18, 131, 79, 0.38);
-        background-color: rgba(255, 255, 255, 1);
-    }
-    .content:nth-child(2) > .content-bg{
-        background-color: #12834F;
-    }
+
     .content:nth-child(1){
         background-image: url(../pic/pict3930_high_contrast.jpg);
-    }
+    }    
     .content:nth-child(1) > .content-bg{
-        /*background-color: rgba(255, 255, 255, 0.38);*/
+        background-image: 
+            linear-gradient(180deg,
+            rgba(255, 255, 255, 0.75) 0%,
+            rgba(255, 255, 255, 0.75) 100%);
+
+    }    
+    .content:nth-child(2) > .content-bg{
+        background-color: #1E4592;
     }
     .content:nth-child(3){
         background-image: url(../pic/pict4019.jpg);
@@ -151,35 +143,50 @@ and open the template in the editor.
         background-color: transparent;
         text-align: center;
     }
-    .content-item > table{
-        width: 100%;
-    }
-    .content-item > table td:nth-child(1){
-        width: 38%;
-        text-align: center;
-    }
-    .icon-container{
-    }
+
     .item-title{
         text-align: center;
         text-transform: uppercase;
         font-family: 'Open Sans Light', 'Open Sans','Cuprum';
-        font-size: 50px;
+        font-size: 45px;
         font-weight: normal;
-        color: #008000;
+        margin-top: 60px;
+        margin-bottom: 40px;
     }
     .item-description{
         padding-left: 10%;
         padding-right: 10%;
-        text-align: left;
-        font-size: 25px;
+        text-align: center;
+        font-size: 30px;
         /*font-family: 'Noto Serif';*/
-        font-family: 'Cuprum';
+        /*font-family: 'Cuprum';*/
         /*font-family: 'PT Serif';*/
         /*font-family: 'Open Sans';*/
         /*font-family: 'Playfair Display';*/
+        /*font-family: 'Verdana';*/
+        /*font-family: 'Exo2';*/
+        font-family: 'Exo2 Light';
         color: #000;
     }
+    .development > .item-title,
+    .development > .item-description
+    {
+        color: rgb(22, 39, 155);
+        color: rgb(0, 0, 0);
+    }
+    .development > .content-ico{
+        opacity: 0.75;
+    }
+
+    .layout-web > .item-title,
+    .layout-web > .item-description
+    {
+        color: #FFF;
+    }
+    .layout-web > .content-ico{
+        opacity: 1.0;
+    }
+
 }
 @media screen and (max-width: 860px){
     .alef{

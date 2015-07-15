@@ -28,4 +28,7 @@ function hcenter(thisClassName) {
 
 $(document).ready(function () {
     vcenter('content-item');
+    $(window).resize(function () {
+        vcenter('content-item');
+    });
 });
