@@ -90,25 +90,17 @@ and open the template in the editor.
         left: 0px;
         right: 0px;
     }
+
     .content{
         position: relative;
         width: 100%;
-        height: 540px;
+        height: 700px;
         cursor: default;
         border: none;
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
-    }
-    .content{
-        position: relative;
-        width: 100%;
-        height: 540px;
-        cursor: default;
-        border: none;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
+        background-color: rgba(255, 255, 255, 1);
     }
     .content-bg{
         position: absolute;
@@ -116,8 +108,27 @@ and open the template in the editor.
         padding: 0px;
         height: 100%;
         width: 100%;
-        /*background-color: rgba(221, 231, 233, 0.62)*/
-        background-color: rgba(255, 255, 255, 0.62)
+        top: 0px;
+    }
+
+    .content:nth-child(1){
+        background-image: url(../pic/pict3930_high_contrast.jpg);
+    }    
+    .content:nth-child(1) > .content-bg{
+        background-image: 
+            linear-gradient(180deg,
+            rgba(255, 255, 255, 0.75) 0%,
+            rgba(255, 255, 255, 0.75) 100%);
+
+    }    
+    .content:nth-child(2) > .content-bg{
+        background-color: #1E4592;
+    }
+    .content:nth-child(3){
+        background-image: url(../pic/pict4019.jpg);
+    }
+    .content:nth-child(5){
+        background-image: url(../pic/pict4271.jpg);
     }
     .content-ico{
         opacity: 0.75;
@@ -129,40 +140,53 @@ and open the template in the editor.
         padding: 0px;
         height: auto;
         width: 100%;
-        color: rgb(22, 39, 155);
         background-color: transparent;
-    }
-    .content-item > table{
-        width: 100%;
-        /*border: 1px solid #000;*/
-    }
-    .content-item > table td:nth-child(2n+1){
-        width: 32%;
         text-align: center;
     }
-    .content:nth-child(1){
-        background-image: url(../pic/pict3930_high_contrast.jpg);
-    }
-    .content:nth-child(3){
-        background-image: url(../pic/pict4019.jpg);
-    }
-    .content:nth-child(5){
-        background-image: url(../pic/pict4271.jpg);
-    }
+
     .item-title{
+        text-align: center;
         text-transform: uppercase;
         font-family: 'Open Sans Light', 'Open Sans','Cuprum';
-        font-size: 50px;
+        font-size: 45px;
         font-weight: normal;
+        margin-top: 60px;
+        margin-bottom: 40px;
     }
     .item-description{
-        font-size: 25px;
+        padding-left: 10%;
+        padding-right: 10%;
+        text-align: center;
+        font-size: 30px;
         /*font-family: 'Noto Serif';*/
-        font-family: 'Cuprum';
+        /*font-family: 'Cuprum';*/
         /*font-family: 'PT Serif';*/
         /*font-family: 'Open Sans';*/
         /*font-family: 'Playfair Display';*/
+        /*font-family: 'Verdana';*/
+        /*font-family: 'Exo2';*/
+        font-family: 'Exo2 Light';
+        color: #000;
     }
+    .development > .item-title,
+    .development > .item-description
+    {
+        color: rgb(22, 39, 155);
+        color: rgb(0, 0, 0);
+    }
+    .development > .content-ico{
+        opacity: 0.75;
+    }
+
+    .layout-web > .item-title,
+    .layout-web > .item-description
+    {
+        color: #FFF;
+    }
+    .layout-web > .content-ico{
+        opacity: 1.0;
+    }
+
 }
 @media screen and (max-width: 860px){
     .alef{
